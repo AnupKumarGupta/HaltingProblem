@@ -14,9 +14,9 @@ int main(int argc, char * argv[])
     snprintf(buffer, sizeof(argv[1]) + sizeof(argv[2]) + 2, "%s %s", argv[1], argv[2]); 
     
     int x = system(buffer);
-    // Working for Timeout, such as infinte loop. The program will be forced to stop and pf undecidable   
+    // If no output occurs then the given program runs infinitely for given input
 
-    if(x==0){
+    if(x==0) {
         printf("\nYes"); //Execution successful
     } else {
         printf("\nNo"); //Excution stopped due to some error

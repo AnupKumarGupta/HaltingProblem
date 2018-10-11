@@ -12,5 +12,5 @@ int main()
 { 
    int x = 5; 
    fun(x); 
-   //Infinite Loop
+   //Stack overflow
 } 
